@@ -1,0 +1,116 @@
+form.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="icon" href="icons/call.png">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            background-color: gray;padding: 5px;
+            display: flex;
+        }
+         #email{
+            margin-left: 65%;
+        }
+        #instagram{
+            margin-left: 40px;
+        }
+        #youtube{
+            margin-left: 30px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .he{
+            background-color:rgb(13, 51, 155);
+            padding: 5px;
+            
+        }
+        div{
+            background-color: rgb(10, 48, 155);
+            padding: 5px;
+        }
+        .form{
+            background-color: white;
+        }
+        h1,h2 {
+            color: white;
+        }
+        .main{
+            border: 2px solid white;
+            text-align: center;
+            align-items: center;
+            display: flex;
+        }
+        .main-nav li{
+            margin-right: 65px;
+            display: inline-block;
+            margin-left: 125px;
+            font-size: 20px;
+        }
+        .main-nav a{
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <img src="icons/call.png" alt="Image Not Found" height="25" width="25"><p>0123456789</p>
+        <img src="icons/icons8-email-50.png" alt="" height="25px" width="25px" id="email"><a href="mailto:hello@thetapacademy.com">hello@thetapacademy</a>
+        <a href="https://www.instagram.com/tapacademy.online"><img src="icons/icons8-instagram-48.png" alt="" height="30px" width="30px" id="instagram"></a>
+        <a href="https://www.youtube.com/@TAPACADEMY"><img src="icons/icons8-youtube-48.png" alt="" height="30px" width="30px" id="youtube"></a>
+     </header>
+
+    <div class="he">
+    <center>
+   <h1>Contact us</h1>
+   </center>
+    </div>
+    <div class="main">
+        <img src="icons/download.png" alt="Image Not Found" height="60" width="130">
+        
+        
+        
+        <ul class="main-nav">
+        <li><a href="Index.html" target="_parent" id="home">Home</a></li>
+        <li><a href="home.html" target="_self" id="Course">Course</a></li>
+        <li><a href="student.html" target="_self" id="students review">Students review</a></li>
+       </ul>
+
+     </div>
+    <form action="thank.html">
+        <div class="form">
+        <fieldset>
+            <legend>Personal Details</legend>
+        <label for="Name">Name</label>
+        <input type="text" id="Name" required name="Name" placeholder="Example:Atharva" size="15" maxlength="10" pattern="[a-zA-Z]{3-8}"><br><br>
+        <label for="Age">Age</label>
+        <input type="number" required id="Age" name="Age"><br><br>
+        <label for="emai">Email</label>
+        <input type="email" required id="emai" name="Email" placeholder="example@gmail.com"><br><br>
+        <label for="dob">DOB</label>
+        <input type="date" name="dob" id="dob" required><br><br>
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone" required pattern="[6-9]{1}[0-9]{9}"><br>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="submit" value="submit">
+        </fieldset>
+    </div>
+          <div>
+           <center>
+            <h2>Location of the Office</h2>
+           </center>
+        </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d124445.93123873464!2d77.54713143987773!3d12.911876642596946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stap%20academy!5e0!3m2!1sen!2sin!4v1698406919093!5m2!1sen!2sin" width="1332" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    </form>
+    
+</body>
+</html>
